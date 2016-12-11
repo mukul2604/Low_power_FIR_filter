@@ -1,0 +1,483 @@
+CSD based low power filter(Filter type :Low Pass)synthesis_report
+
+Reading design: my_fir.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/my_fir is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/unit_device.vhd", and is now defined in "/opt/project/unit_device.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_fir/rtl is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/unit_device.vhd", and is now defined in "/opt/project/unit_device.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_functions is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/Version1/my_functions.vhd", and is now defined in "/opt/project/Version1/my_functions.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_functions is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/Version1/my_functions.vhd", and is now defined in "/opt/project/Version1/my_functions.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_package is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/my_package.vhd", and is now defined in "/opt/project/my_package.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_package is now defined in a different file.  It was defined in "/opt/btech/ver1_fir/../../project/my_package.vhd", and is now defined in "/opt/project/my_package.vhd".
+Compiling vhdl file "/opt/project/my_package.vhd" in Library work.
+Architecture my_package of Entity my_package is up to date.
+Compiling vhdl file "/opt/project/Version1/my_functions.vhd" in Library work.
+Architecture my_functions of Entity my_functions is up to date.
+Compiling vhdl file "/opt/project/unit_device.vhd" in Library work.
+Architecture rtl of Entity my_fir is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <my_fir> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <my_fir> in library <work> (Architecture <rtl>).
+Entity <my_fir> analyzed. Unit <my_fir> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <my_fir>.
+    Related source file is "/opt/project/unit_device.vhd".
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 24-bit adder for signal <y>.
+    Found 24-bit subtractor for signal <coeff0$sub0000> created at line 48.
+    Found 24-bit adder for signal <coeff1$add0000> created at line 63.
+    Found 24-bit adder for signal <coeff1$addsub0000> created at line 63.
+    Found 24-bit subtractor for signal <coeff10$sub0000> created at line 223.
+    Found 24-bit adder for signal <coeff2$addsub0000> created at line 80.
+    Found 24-bit adder for signal <coeff2$addsub0001> created at line 80.
+    Found 24-bit subtractor for signal <coeff2$sub0000> created at line 80.
+    Found 24-bit adder for signal <coeff3$addsub0000> created at line 96.
+    Found 24-bit subtractor for signal <coeff3$sub0000> created at line 96.
+    Found 24-bit adder for signal <coeff4$add0000> created at line 118.
+    Found 24-bit subtractor for signal <coeff4$addsub0000> created at line 118.
+    Found 24-bit subtractor for signal <coeff4$addsub0001> created at line 118.
+    Found 24-bit adder for signal <coeff4$addsub0002> created at line 118.
+    Found 24-bit adder for signal <coeff4$addsub0003> created at line 118.
+    Found 24-bit adder for signal <coeff5$add0000> created at line 138.
+    Found 24-bit subtractor for signal <coeff5$addsub0000> created at line 138.
+    Found 24-bit subtractor for signal <coeff5$addsub0001> created at line 138.
+    Found 24-bit subtractor for signal <coeff5$addsub0002> created at line 138.
+    Found 24-bit adder for signal <coeff6$add0000> created at line 160.
+    Found 24-bit subtractor for signal <coeff6$addsub0000> created at line 160.
+    Found 24-bit subtractor for signal <coeff6$addsub0001> created at line 160.
+    Found 24-bit adder for signal <coeff6$addsub0002> created at line 160.
+    Found 24-bit adder for signal <coeff6$addsub0003> created at line 160.
+    Found 24-bit adder for signal <coeff7$addsub0000> created at line 177.
+    Found 24-bit subtractor for signal <coeff7$sub0000> created at line 177.
+    Found 24-bit adder for signal <coeff8$addsub0000> created at line 195.
+    Found 24-bit adder for signal <coeff8$addsub0001> created at line 195.
+    Found 24-bit subtractor for signal <coeff8$sub0000> created at line 195.
+    Found 24-bit adder for signal <coeff9$add0000> created at line 210.
+    Found 24-bit adder for signal <coeff9$addsub0000> created at line 210.
+    Found 24-bit adder for signal <y$addsub0000> created at line 81.
+    Found 24-bit adder for signal <y$addsub0001> created at line 81.
+    Found 24-bit adder for signal <y$addsub0002> created at line 81.
+    Found 24-bit adder for signal <y$addsub0003> created at line 81.
+    Found 24-bit adder for signal <y$addsub0004> created at line 81.
+    Found 24-bit adder for signal <y$addsub0005> created at line 81.
+    Found 24-bit adder for signal <y$addsub0006> created at line 81.
+    Found 24-bit adder for signal <y$addsub0007> created at line 81.
+    Found 24-bit adder for signal <y$addsub0008> created at line 81.
+    Summary:
+	inferred  88 D-type flip-flop(s).
+	inferred  40 Adder/Subtractor(s).
+Unit <my_fir> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 40
+ 24-bit adder                                          : 27
+ 24-bit subtractor                                     : 13
+# Registers                                            : 88
+ 1-bit register                                        : 88
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment /cad/xilinx/Xilinx92i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 40
+ 24-bit adder                                          : 27
+ 24-bit subtractor                                     : 13
+# Registers                                            : 88
+ Flip-Flops                                            : 88
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <my_fir> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block my_fir, actual ratio is 9.
+FlipFlop reg<1>_7 has been replicated 1 time(s)
+FlipFlop reg<4>_0 has been replicated 1 time(s)
+FlipFlop reg<4>_1 has been replicated 1 time(s)
+FlipFlop reg<4>_5 has been replicated 1 time(s)
+FlipFlop reg<4>_7 has been replicated 1 time(s)
+FlipFlop reg<5>_7 has been replicated 1 time(s)
+FlipFlop reg<6>_5 has been replicated 1 time(s)
+FlipFlop reg<6>_7 has been replicated 1 time(s)
+FlipFlop reg<9>_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 97    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 97    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.001ns (Maximum Frequency: 499.750MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 41.689ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize" completed successfully
+
+
+
+
+IMPLEMENTATION-----
+
+NotUpToDate:generated file list is cmd
+ngdbuild -ise "/opt/btech/ver1_fir/ver1_fir.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "my_fir.ngc" my_fir.ngd is cmd
+
+Command Line: ngdbuild -ise /opt/btech/ver1_fir/ver1_fir.ise -intstyle ise -dd
+_ngo -nt timestamp -i -p xc3s500e-fg320-4 my_fir.ngc my_fir.ngd
+
+Reading NGO file "/opt/btech/ver1_fir/my_fir.ngc" ...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "my_fir.ngd" ...
+
+Writing NGDBUILD log file "my_fir.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+Using target part "3s500efg320-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:          89 out of   9,312    1%
+  Number of 4 input LUTs:             625 out of   9,312    6%
+Logic Distribution:
+  Number of occupied Slices:                          390 out of   4,656    8%
+    Number of Slices containing only related logic:     390 out of     390  100%
+    Number of Slices containing unrelated logic:          0 out of     390    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:            631 out of   9,312    6%
+  Number used as logic:                625
+  Number used as a route-thru:           6
+  Number of bonded IOBs:               34 out of     232   14%
+    IOB Flip Flops:                     8
+  Number of GCLKs:                     1 out of      24    4%
+
+Total equivalent gate count for design:  6,306
+Additional JTAG gate count for IOBs:  1,632
+Peak Memory Usage:  429 MB
+Total REAL time to MAP completion:  10 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "my_fir_map.mrp" for details.
+
+Process "Map" completed successfully
+
+
+
+Constraints file: my_fir.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment /cad/xilinx/Xilinx92i.
+   "my_fir" is an NCD, version 3.1, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.26 2007-04-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          34 out of 232    14%
+
+   Number of External Input IOBs                 10
+
+      Number of External Input IBUFs             10
+
+   Number of External Output IOBs                24
+
+      Number of External Output IOBs             24
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                        390 out of 4656    8%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98a2ea) REAL time: 6 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 6 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 6 secs 
+
+Phase 4.2
+.
+Phase 4.2 (Checksum:26259fc) REAL time: 7 secs 
+
+Phase 5.30
+Phase 5.30 (Checksum:2faf07b) REAL time: 7 secs 
+
+Phase 6.3
+Phase 6.3 (Checksum:39386fa) REAL time: 7 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 7 secs 
+
+Phase 8.8
+................
+..
+......
+..
+..
+.
+Phase 8.8 (Checksum:a79317) REAL time: 15 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 15 secs 
+
+Phase 10.18
+Phase 10.18 (Checksum:5f5e0f6) REAL time: 16 secs 
+
+Phase 11.5
+Phase 11.5 (Checksum:68e7775) REAL time: 16 secs 
+
+REAL time consumed by placer: 16 secs 
+CPU  time consumed by placer: 13 secs 
+Writing design to file my_fir.ncd
+
+
+Total REAL time to Placer completion: 17 secs 
+Total CPU time to Placer completion: 14 secs 
+
+Starting Router
+
+Phase 1: 2467 unrouted;       REAL time: 24 secs 
+
+Phase 2: 2393 unrouted;       REAL time: 25 secs 
+
+Phase 3: 582 unrouted;       REAL time: 26 secs 
+
+Phase 4: 582 unrouted; (9165)      REAL time: 26 secs 
+
+Phase 5: 585 unrouted; (0)      REAL time: 26 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 27 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 28 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 28 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 28 secs 
+
+
+Total REAL time to Router completion: 28 secs 
+Total CPU time to Router completion: 23 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X2Y10| No   |   57 |  0.060     |  0.184      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP   |         N/A|     2.911ns|     N/A|           0
+  _BUFGP                                    | HOLD    |     1.045ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 31 secs 
+Total CPU time to PAR completion: 24 secs 
+
+Peak Memory Usage:  363 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file my_fir.ncd
+
+
+
+PAR done!
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+/cad/xilinx/Xilinx92i.
+   "my_fir" is an NCD, version 3.1, device xc3s500e, package fg320, speed -4
+
+Analysis completed Sat Apr 21 12:34:47 2012
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 5 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully
+
+
